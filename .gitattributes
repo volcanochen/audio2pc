@@ -1,0 +1,7 @@
+# 批处理必须是 CRLF，否则 cmd 解析可能出错
+*.bat text eol=crlf
+
+# 其他文本文件统一 LF
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
