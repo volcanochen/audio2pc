@@ -24,9 +24,14 @@ Android 系统的「输出设备切换器」由音频 HAL 层定义，**非 root
 ## 快速开始
 
 ```bat
-python bootstrap.py        :: 自动下载 scrcpy + 建虚拟环境 + 装依赖
+git clone https://github.com/volcanochen/audio2pc.git
+cd audio2pc
+
+python bootstrap.py        :: 自动下载 scrcpy + 建虚拟环境 + 装依赖（校验 SHA256）
 start-dock.bat             :: 双击启动托盘工具
 ```
+
+仓库里只有源码（约 100KB）。scrcpy 二进制和 Python 依赖不入库，由 `bootstrap.py` 在首次运行时自动获取。
 
 手动步骤：
 
